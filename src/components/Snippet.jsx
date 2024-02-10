@@ -3,8 +3,6 @@ import { FaRegCopy } from "react-icons/fa6"
 import { TiTick } from "react-icons/ti"
 import "../styles/output.css"
 
-// TODO - fix multiline copy error
-
 export default function Snippet({ size="md", children: text, symbol="$", copy=false }) {
     const [hasCopied, setHasCopied] = useState(false);
     const sizes = {

@@ -1,5 +1,6 @@
 import "./styles/output.css"
 import Snippet from './components/Snippet'
+import Button from './components/Button'
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
         <span>npm install -D tailwindcss</span>
         <span>npx tailwindcss init</span>
         {/* npm install @nextui-org/react */}
-      </Snippet>
+      </Snippet><br />
+      <Button isDisabled>Button</Button>
     </>
   );
 }
