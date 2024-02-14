@@ -89,5 +89,9 @@ export default function Button(props) {
 }
 
 Button.propTypes = {
-    
+    color: PropTypes.string,
+    size: PropTypes.string,
+    radius: PropTypes.string,
+    onClick: PropTypes.func,
+    isDisabled: PropTypes.bool,
 }
