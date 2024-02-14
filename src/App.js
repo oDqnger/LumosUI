@@ -11,7 +11,7 @@ function App() {
         <span>npx tailwindcss init</span>
         {/* npm install @nextui-org/react */}
       </Snippet><br />
-      <Button>Button</Button>
+      <Button>Hello</Button>
     </>
   );
 }
