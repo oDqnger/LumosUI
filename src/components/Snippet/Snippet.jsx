@@ -1,9 +1,8 @@
 import { useState } from "react"
 import { FaRegCopy } from "react-icons/fa6"
 import { TiTick } from "react-icons/ti"
-import "../styles/output.css"
 
-export default function Snippet({ size="md", children: text, symbol="$", copy=false }) {
+export function Snippet({ size="md", children: text, symbol="$", copy=false }) {
     const [hasCopied, setHasCopied] = useState(false);
     const sizes = {
         sm: "pr-2 pl-2 pt-2 pb-2 text-sm",

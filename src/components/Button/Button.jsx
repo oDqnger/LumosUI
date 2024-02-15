@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-export default function Button(props) {
+export function Button(props) {
 
     const {
         color="default",

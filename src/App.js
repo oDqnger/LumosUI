@@ -1,6 +1,7 @@
 import "./styles/output.css"
-import Snippet from './components/Snippet'
-import Button from './components/Button'
+import { Snippet } from './components/Snippet'
+import { Button } from './components/Button'
+import { Accordian, AccordianItem } from "./components/Accordian";
 
 function App() {
   return (
