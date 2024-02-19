@@ -9,6 +9,7 @@ export function Button(props) {
         size="md", 
         isDisabled=false, 
         children: text, 
+        className,
         ...defaultProps
         } = props;
 
@@ -61,9 +62,9 @@ export function Button(props) {
     }
 
     const buttonStyles = {
-        normal: `border ${radiusStyles[radius] ?? radiusStyles["full"]} ${buttonColors[color].normal ?? buttonColors["default"].normal} pr-7 pl-7 pt-2 pb-2 ${buttonColors[color].hover ?? buttonColors["default"].hover} transition ease-in-out`,
-        clicked: `border ${radiusStyles[radius] ?? radiusStyles["full"]} ${buttonColors[color].clicked ?? buttonColors["default"].clicked} pr-7 pl-7 pt-2 pb-2`,
-        disable: `border ${radiusStyles[radius] ?? radiusStyles["full"]} ${buttonColors[color].disable ?? buttonColors["default"].disable} pr-7 pl-7 pt-2 pb-2`,
+        normal: `border ${radiusStyles[radius] ?? radiusStyles["full"]} ${buttonColors[color].normal ?? buttonColors["default"].normal} pr-7 pl-7 pt-2 pb-2 ${buttonColors[color].hover ?? buttonColors["default"].hover} transition ease-in-out ${className ?? ""}`,
+        clicked: `border ${radiusStyles[radius] ?? radiusStyles["full"]} ${buttonColors[color].clicked ?? buttonColors["default"].clicked} pr-7 pl-7 pt-2 pb-2 ${className ?? ""}`,
+        disable: `border ${radiusStyles[radius] ?? radiusStyles["full"]} ${buttonColors[color].disable ?? buttonColors["default"].disable} pr-7 pl-7 pt-2 pb-2 ${className ?? ""}`,
     };
 
     const buttonSizes = {
@@ -81,7 +82,9 @@ export function Button(props) {
             setTimeout(() => {
                 e.target.className = buttonStyles.normal + (buttonSizes[size] ?? buttonSizes["md"]);
             }, 50);
-            this?.handleClick(e);
+            if (handleClick) {
+                handleClick(e);
+            }
         }}
         {...defaultProps}
         >{text}</button>

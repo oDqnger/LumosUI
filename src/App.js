@@ -12,7 +12,18 @@ function App() {
         <span>npx tailwindcss init</span>
         {/* npm install @nextui-org/react */}
       </Snippet><br />
-      <Button>Hello</Button>
+      <Button>Hello</Button><br />
+      <Accordian>
+        <AccordianItem title="Title #1" subtitle="this is subtitle #1">
+          This is accordian item number one
+        </AccordianItem>
+        <AccordianItem title="Title #2" subtitle="this is subtitle #2">
+          This is accoridna item number two
+        </AccordianItem>
+        <AccordianItem title="Title #3" subtitle="this is subtitle #3">
+          This is accoridan item number three
+        </AccordianItem>
+      </Accordian>
     </>
   );
 }
