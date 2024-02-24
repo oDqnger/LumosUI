@@ -16,7 +16,7 @@ export default function Accordian(props) {
                         return ( 
                             <>
                                 {cloneElement(child, { key: index })}
-                                <br />
+                                <br /> 
                             </>
                         )
                     }

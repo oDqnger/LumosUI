@@ -2,6 +2,7 @@ import "./styles/output.css"
 import { Snippet } from './components/Snippet'
 import { Button } from './components/Button'
 import { Accordian, AccordianItem } from "./components/Accordian";
+import { Input } from "./components/Input"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           This is accoridan item number three
         </AccordianItem>
       </Accordian>
+      <Input type="email" placeholder="Email" />
     </>
   );
 }
