@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         snippetCode: ["Fira Code", "monospace"],
-        inter: ["Inter", "sans-serif"]
+        lumosui: ["Montserrat", "sans-serif"]
       }
     },
   },
