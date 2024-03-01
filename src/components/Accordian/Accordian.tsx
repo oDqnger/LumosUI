@@ -1,4 +1,4 @@
-import { Children, cloneElement } from 'react' 
+import React, { Children, cloneElement } from 'react' 
 import PropTypes from 'prop-types'
 import AccordianItem from './AccordianItem'
 

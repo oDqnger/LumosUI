@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import PropTypes from 'prop-types'
+import React, { useState } from 'react'
 import { Button } from "../Button"
 
 export default function AccordianItem(props) {
@@ -35,8 +34,4 @@ export default function AccordianItem(props) {
             }
         </>
  )
-}
-
-AccordianItem.propTypes = {
-    
 }

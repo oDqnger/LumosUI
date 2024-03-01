@@ -1,3 +1,4 @@
+import React from "react";
 import "./styles/output.css"
 import { Snippet } from './components/Snippet'
 import { Button } from './components/Button'

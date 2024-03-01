@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from 'prop-types'
 
 export function Button(props) {
@@ -78,9 +79,10 @@ export function Button(props) {
             isDisabled ? buttonStyles.disable + (buttonSizes[size] ?? buttonSizes["md"]): buttonStyles.normal + (buttonSizes[size] ?? buttonSizes["md"])
         }
         onClick={(e) => {
-            e.target.className = buttonStyles.clicked + (buttonSizes[size] ?? buttonSizes["md"]);
+            const target = e.target as HTMLButtonElement;
+            target.className = buttonStyles.clicked + (buttonSizes[size] ?? buttonSizes["md"]);
             setTimeout(() => {
-                e.target.className = buttonStyles.normal + (buttonSizes[size] ?? buttonSizes["md"]);
+                target.className = buttonStyles.normal + (buttonSizes[size] ?? buttonSizes["md"]);
             }, 50);
             if (handleClick) {
                 handleClick(e);
