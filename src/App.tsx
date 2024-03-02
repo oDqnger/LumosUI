@@ -26,7 +26,7 @@ function App() {
           This is accoridan item number three
         </AccordianItem>
       </Accordian>
-      <Input radius="asdjhalsd" sizes="md" label="hello" type="email" placeholder="Email" />
+      <Input type="email" sizes="md" radius="md" />
     </>
   );
 }
