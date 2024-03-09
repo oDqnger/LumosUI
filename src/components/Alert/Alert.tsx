@@ -23,6 +23,7 @@ export default function Alert(props: AllProps) {
         <>
             <div
             className={combinedStyles}
+            { ...defaultProps }
             >
             {text}</div>
         </>
