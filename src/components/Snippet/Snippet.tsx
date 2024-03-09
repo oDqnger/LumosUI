@@ -1,58 +1,74 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { FaRegCopy } from "react-icons/fa6"
 import { TiTick } from "react-icons/ti"
+import { sizes, textStyles, baseStyles } from "./SnippetStyles";
+import SnippetProps from "./snippet.d";
 
-export function Snippet({ size="md", children: text, symbol="$", copy=false }) {
+export function Snippet(props: SnippetProps) {
+    
+    const {
+        size="md",
+        children: text,
+        symbol="$",
+        copy=false,
+        className,
+        ...defaultProps
+    } = props;
+    
     const [hasCopied, setHasCopied] = useState(false);
-    const sizes = {
-        sm: "pr-2 pl-2 pt-2 pb-2 text-sm",
-        md: "pr-4 pl-4 pt-3 pb-3",
-        lg: "pr-7 pl-7 pt-3 pb-3 text-xl"
-    };
+    const [lines, setLines] = useState(`${symbol}\n${text}`)
+
+    const handleClick = () => {
+        const str = () => {
+            let s = "";
+            
+            for (const line of lines) {
+                s += `${line.props.children[1].props.children}\n`;
+            }
+            
+            return s;
+        }
+        navigator.clipboard.writeText(typeof lines == "string" ? text : str());
+        setHasCopied(true)
+    }
+
+    const logo = () => {
+        return !copy
+        ?
+            !hasCopied
+            ? 
+            <FaRegCopy className="inline-block" />
+            :
+            <TiTick className="inline-block" />
+        :
+            ""
+    }
+
+    useEffect(() => {
+        if (typeof text === "object") {
+            setLines(text.map(t => 
+                <>
+                    <span>{symbol + "\n"}{t}</span><br />
+                </>
+            ))
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     if (hasCopied) {
         setTimeout(() => {
             setHasCopied(!hasCopied)
         }, 2000)
     }
-
-    if (typeof text === "object") {
-        var lines = text.map(t => 
-            <h3>{symbol + "\n"}{t}</h3>
-        )
-    }
-
+    
     return (
         <>
-            <div className={`border-2 inline-block ${
-                size==="sm" ? sizes["sm"] : size==="md" ? sizes["md"] : size==="lg" ? sizes["lg"] : sizes["md"]
-                } rounded-lg bg-slate-800 text-white`}>
-                <h3 className="font-snippetCode pr-3 inline-block">{lines === undefined ? `${symbol}\n${text}` : lines}</h3>
-                <button onClick={() => {
-                    const str = () => {
-                        let s = "";
-                        
-                        for (const line of lines) {
-                            s += `${line.props.children[1].props.children}\n`;
-                        }
-                        
-                        return s;
-                    }
-                    navigator.clipboard.writeText(lines === undefined ? text : str());
-                    
-                    setHasCopied(true)
-                }}>
-                {
-                    !copy
-                    ?
-                        !hasCopied
-                        ? 
-                        <FaRegCopy className="inline-block" />
-                        :
-                        <TiTick className="inline-block" />
-                    :
-                        ""
-                }</button>
+            <div
+            className={baseStyles + className + " " +sizes[size]}>
+                <h3 className={textStyles}>{lines}</h3>
+                <button onClick={handleClick}>
+                    {logo()}
+                </button>
             </div>
         </>
     )

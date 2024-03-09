@@ -15,7 +15,6 @@ export function Button(props: AllProps) {
     ...defaultProps
     } = props;
 
-
     const buttonStyles = {
         normal: `border ${radiusStyles[radius]} ${buttonColors[color].normal} pr-7 pl-7 pt-2 pb-2 ${buttonColors[color].hover} transition ease-in-out ${className}`,
         clicked: `border ${radiusStyles[radius]} ${buttonColors[color].clicked} pr-7 pl-7 pt-2 pb-2 ${className}`,

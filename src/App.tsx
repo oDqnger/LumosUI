@@ -15,6 +15,9 @@ function App() {
         {/* npm install @nextui-org/react */}
       </Snippet><br />
       <Button>Hello</Button><br />
+      <Button radius="none" size="sm" color="success" onClick={() => {
+        console.log("hello");
+      }}>Hello</Button>
       <Accordian>
         <AccordianItem title="Title #1" subtitle="this is subtitle #1">
           This is accordian item number one
@@ -27,6 +30,8 @@ function App() {
         </AccordianItem>
       </Accordian>
       <Input type="email" sizes="md" radius="md" />
+
+      <Snippet>python main.py</Snippet>
     </>
   );
 }
