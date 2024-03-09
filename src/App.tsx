@@ -4,6 +4,7 @@ import { Snippet } from './components/Snippet'
 import { Button } from './components/Button'
 import { Accordian, AccordianItem } from "./components/Accordian";
 import { Input } from "./components/Input"
+import { Alert } from "./components/Alert"
 
 function App() {
   return (
@@ -15,9 +16,6 @@ function App() {
         {/* npm install @nextui-org/react */}
       </Snippet><br />
       <Button>Hello</Button><br />
-      <Button radius="none" size="sm" color="success" onClick={() => {
-        console.log("hello");
-      }}>Hello</Button>
       <Accordian>
         <AccordianItem title="Title #1" subtitle="this is subtitle #1">
           This is accordian item number one
@@ -30,8 +28,9 @@ function App() {
         </AccordianItem>
       </Accordian>
       <Input type="email" sizes="md" radius="md" />
-
-      <Snippet>python main.py</Snippet>
+      <br/><Snippet>python main.py</Snippet>
+      <br />
+      <Alert theme="success" radius="full">Successfully created an account!</Alert>
     </>
   );
 }

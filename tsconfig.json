@@ -109,7 +109,9 @@
   },
   "include": [
     "./src/**/*.{ts,tsx}",
-    "src/components/Input/__tests__/Input.test.tsx"
+    "src/components/Input/__tests__/Input.test.tsx",
+    "src/components/Alert/__tests__/Alert.test.tsx",
+    "src/components/Snippet/__tests__/Snippet.test.tsx"
   ],
   "exclude": [
     "./node_modules"
