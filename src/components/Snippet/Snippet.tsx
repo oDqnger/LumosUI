@@ -16,15 +16,15 @@ export function Snippet(props: SnippetProps) {
     } = props;
     
     const [hasCopied, setHasCopied] = useState(false);
-    const [lines, setLines] = useState(`${symbol}\n${text}`)
+    const [lines, setLines] = useState([<h2 className={textStyles}>{symbol + "\n"}{text}</h2>])
 
     const handleClick = () => {
         const str = () => {
             let s = "";
             
-            for (const line of lines) {
+            lines.forEach(line => {
                 s += `${line.props.children[1].props.children}\n`;
-            }
+            })
             
             return s;
         }
@@ -47,9 +47,7 @@ export function Snippet(props: SnippetProps) {
     useEffect(() => {
         if (typeof text === "object") {
             setLines(text.map(t => 
-                <>
-                    <span>{symbol + "\n"}{t}</span><br />
-                </>
+                <h3 className={textStyles}>{symbol + "\n"}{t}</h3>
             ))
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -65,7 +63,7 @@ export function Snippet(props: SnippetProps) {
         <>
             <div
             className={baseStyles + className + " " +sizes[size]}>
-                <h3 className={textStyles}>{lines}</h3>
+                {lines}
                 <button onClick={handleClick}>
                     {logo()}
                 </button>
