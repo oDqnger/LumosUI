@@ -6,6 +6,7 @@ import { Accordian, AccordianItem } from "./components/Accordian";
 import { Input } from "./components/Input"
 import { Alert } from "./components/Alert"
 import { Card } from "./components/Card";
+import { Divider } from "./components/Divider"
 
 function App() {
   return (
@@ -32,10 +33,11 @@ function App() {
       <br/><Snippet>python main.py</Snippet><br />
       <Alert className="mb-8 mt-8" theme="success" radius="full">Successfully created an account!</Alert>
       <br />
-      <Card radius="md" className="pr-10">
+      <Card radius="md" className="pr-10 mb-5">
         <span className="text-gray-600">Word of the day</span>
         <h1 className="font-semibold text-2xl">be•nev•o•lent</h1>
         <span className="text-gray-600">adjective</span>
+        <Divider radius="lg" orientation="horizontal" variants="dashed" />
         <p className="mt-3 mb-3">well meaning and kindly.
         <br />"a benevolent smile"</p>
         <a href="www.youtube.com" className="text-sky-900">LEARN MORE</a>
