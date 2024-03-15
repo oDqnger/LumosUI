@@ -32,7 +32,7 @@ export default function Input(props: AllProps) {
     const selectRadius = () => radiusStyles[radius] ?? radiusStyles["lg"];
     const selectSize = () => sizeStyles[sizes] ?? sizeStyles["md"]
 
-    const baseStyle = className + `border-2 ${selectRadius()} ${selectSize()} font-semibold text-white`;
+    const baseStyle = className + ` border-2 ${selectRadius()} ${selectSize()} font-semibold text-white`;
     const normalStyle = baseStyle + " transition ease-in-out hover:bg-gray-600 border-gray-500 bg-gray-500";
     const disabledStyle = baseStyle + " border-gray-800 bg-gray-800";
     const readOnlyStyle = baseStyle + " transition ease-in-out bg-gray-500 border-gray-600 hover:border-gray-700"

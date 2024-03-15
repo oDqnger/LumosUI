@@ -569,6 +569,10 @@ video {
   }
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -589,37 +593,24 @@ video {
   margin-top: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .inline-block {
   display: inline-block;
-}
-
-.flex {
-  display: flex;
-}
-
-.h-1 {
-  height: 0.25rem;
 }
 
 .h-14 {
   height: 3.5rem;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .w-72 {
   width: 18rem;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
-}
-
-.rotate-90 {
-  --tw-rotate: 90deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rotate-0 {
@@ -627,8 +618,9 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.flex-col {
-  flex-direction: column;
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .overflow-auto {
@@ -749,11 +741,6 @@ video {
   background-color: rgb(8 145 178 / var(--tw-bg-opacity));
 }
 
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
 .bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
@@ -864,9 +851,14 @@ video {
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
-.bg-gray-900 {
+.bg-neutral-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-3 {
@@ -975,6 +967,14 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pr-56 {
+  padding-right: 14rem;
+}
+
+.pr-48 {
+  padding-right: 12rem;
 }
 
 .text-center {

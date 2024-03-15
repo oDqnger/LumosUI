@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/output.css"
 import { Snippet } from './components/Snippet'
 import { Button } from './components/Button'
@@ -7,15 +7,15 @@ import { Input } from "./components/Input"
 import { Alert } from "./components/Alert"
 import { Card } from "./components/Card";
 import { Divider } from "./components/Divider"
+import DiscordPFP from "./examples/DiscordPFP";
 
 function App() {
   return (
     <>
-      <h1 className="text-5xl font-bold">Hello World</h1>
+      {/* <h1 className="text-5xl font-bold">Hello World</h1>
       <Snippet>
         <span>npm install -D tailwindcss</span>
         <span>npx tailwindcss init</span>
-        {/* npm install @nextui-org/react */}
       </Snippet><br />
       <Button>Hello</Button><br />
       <Accordian>
@@ -41,7 +41,23 @@ function App() {
         <p className="mt-3 mb-3">well meaning and kindly.
         <br />"a benevolent smile"</p>
         <a href="www.youtube.com" className="text-sky-900">LEARN MORE</a>
-      </Card>
+      </Card> */}
+
+      <DiscordPFP 
+      displayName="oDqnger"
+      name="odqnger"
+      pronouns="odonger/odqnger/dqnger/odanger/dangerous"
+      aboutMe="c# and unity game developer"
+      memberSince="Dec 31, 2020"
+      />
+
+      <DiscordPFP 
+      displayName="shrimp"
+      name="cuhhh._."
+      pronouns="im a shrimp so don't judge"
+      aboutMe="i guess im shrimply the best"
+      memberSince="Nov 6, 2023"
+      />
     </>
   );
 }
