@@ -62,7 +62,7 @@ export function Snippet(props: SnippetProps) {
     return (
         <>
             <div
-            className={baseStyles + className + " " +sizes[size]}>
+            className={className + " " + baseStyles + sizes[size]}>
                 {lines}
                 <button onClick={handleClick}>
                     {logo()}

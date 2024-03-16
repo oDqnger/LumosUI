@@ -14,11 +14,11 @@ export default function Alert(props: AllProps) {
     } = props;
     
     const combinedStyles = 
-    baseStyles
+    className+" "
+    +baseStyles
     +themeStyles[theme][variant] 
     +radiusStyles[radius] 
-    +className
-
+    
     return (
         <>
             <div

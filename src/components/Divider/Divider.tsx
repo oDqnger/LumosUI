@@ -12,11 +12,11 @@ export default function Divider(props: AllProps) {
     } = props;
     
     const combinedStyles = 
-    baseStyle 
+    className+" "
+    +baseStyle 
     +radiusStyles[radius] 
     +variantStyles[variants] 
-    +orientationStyles[orientation] 
-    +className;
+    +orientationStyles[orientation];
 
     return (
         <hr className={combinedStyles} />
