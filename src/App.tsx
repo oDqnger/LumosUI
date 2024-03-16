@@ -7,6 +7,7 @@ import { Input } from "./components/Input"
 import { Alert } from "./components/Alert"
 import { Card } from "./components/Card";
 import { Divider } from "./components/Divider"
+import { Avatar } from "./components/Avatar";
 import DiscordPFP from "./examples/DiscordPFP";
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
       pronouns="odonger/odqnger/dqnger/odanger/dangerous"
       aboutMe="c# and unity game developer"
       memberSince="Dec 31, 2020"
+      discordPfp="https://i.pravatar.cc/150?u=a042581f4e29026024d"
       />
 
       <DiscordPFP 
@@ -57,7 +59,15 @@ function App() {
       pronouns="im a shrimp so don't judge"
       aboutMe="i guess im shrimply the best"
       memberSince="Nov 6, 2023"
+      discordPfpName="shrimp"
       />
+
+      {/* <Avatar
+      src="https://i.pravatar.cc/150?u=a042581f4e29026024d" 
+      /> */}
+
+      <Avatar name="Junior" />
+
     </>
   );
 }
