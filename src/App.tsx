@@ -40,6 +40,8 @@ function App() {
       memberSince="Nov 6, 2023"
       discordPfpName="shrimp"
       />
+
+      <Button className="bg-green-400">Hello</Button>
     </>
   );
 }

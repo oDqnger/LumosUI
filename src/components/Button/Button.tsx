@@ -16,12 +16,12 @@ export function Button(props: AllProps) {
     } = props;
 
     const buttonStyles = {
-        normal: `${className} border ${radiusStyles[radius]} ${buttonColors[color].normal} pr-7 pl-7 pt-2 pb-2 ${buttonColors[color].hover} transition ease-in-out`,
-        clicked: `${className} border ${radiusStyles[radius]} ${buttonColors[color].clicked} pr-7 pl-7 pt-2 pb-2`,
-        disable: `${className} border ${radiusStyles[radius]} ${buttonColors[color].disable} pr-7 pl-7 pt-2 pb-2`,
+        normal: `border ${radiusStyles[radius]} ${buttonColors[color].normal} pr-7 pl-7 pt-2 pb-2 ${buttonColors[color].hover} transition ease-in-out ${className}`,
+        clicked: `border ${radiusStyles[radius]} ${buttonColors[color].clicked} pr-7 pl-7 pt-2 pb-2 ${className}`,
+        disable: `border ${radiusStyles[radius]} ${buttonColors[color].disable} pr-7 pl-7 pt-2 pb-2 ${className}`,
     };
     const selectDisabled = () => isDisabled ? buttonStyles.disable + buttonSizes[size]: buttonStyles.normal + buttonSizes[size];
-
+    
     return (
         <button
         disabled={isDisabled}
