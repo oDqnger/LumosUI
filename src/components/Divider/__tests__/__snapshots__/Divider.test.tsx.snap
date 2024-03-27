@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider component should match snapshot 1`] = `
+<div>
+  <hr
+    class="undefined  border-gray-500 border-2  rounded-md undefined rotate-0 "
+  />
+</div>
+`;

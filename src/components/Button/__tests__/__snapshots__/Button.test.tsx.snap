@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component should match snapshot 1`] = `
+<div>
+  <button
+    class="border rounded-lg bg-zinc-500 pr-7 pl-7 pt-2 pb-2 hover:bg-zinc-600 transition ease-in-out "
+  >
+    Hello
+  </button>
+</div>
+`;

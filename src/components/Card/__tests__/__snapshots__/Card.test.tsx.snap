@@ -3,7 +3,7 @@
 exports[`Card component render card component 1`] = `
 <div>
   <div
-    class="border rounded-xl inline-block p-3 bg-slate-400 rounded-full pr-10"
+    class="border inline-block p-3 rounded-full pr-10"
   >
     <span
       class="text-gray-600"

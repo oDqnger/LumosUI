@@ -8,4 +8,9 @@ describe("Alert component", () => {
         const { container } = render(<Alert theme='success'>HI</Alert>)
         expect(container).toBeInTheDocument()
     })
+
+    it("should match snapshot", () => {
+        const { container } = render(<Alert theme="success">Hello</Alert>)
+        expect(container).toMatchSnapshot();
+    })
 })

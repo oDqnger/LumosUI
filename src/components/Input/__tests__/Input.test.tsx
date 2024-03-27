@@ -4,7 +4,13 @@ import { render } from "@testing-library/react"
 import Input from "../Input"
 
 describe("Input component", () => {
-    it("render input component", () => {
+
+    it("should match the snapshot", () => {
+        const { container } = render(<Input type="email" />)
+        expect(container).toMatchSnapshot()
+    })
+
+    it("should render input component", () => {
         const { container } = render(<Input type="email" />)
         expect(container).toBeInTheDocument()
     })

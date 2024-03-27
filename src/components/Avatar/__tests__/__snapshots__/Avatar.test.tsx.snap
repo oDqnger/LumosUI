@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar component should match snapshot 1`] = `
+<div>
+  <img
+    class="undefined rounded-full w-14 h-14 border-slate-500 border-2"
+    src="https://i.pravatar.cc/150?u=a04258114e29026702d"
+  />
+</div>
+`;

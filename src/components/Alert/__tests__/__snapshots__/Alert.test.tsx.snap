@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert component should match snapshot 1`] = `
+<div>
+  <div
+    class="undefined pr-24 pl-24 pt-4 pb-4 text-center text-md inline-block bg-green-200 text-green-600  rounded-md "
+  >
+    Hello
+  </div>
+</div>
+`;

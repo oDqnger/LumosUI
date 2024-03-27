@@ -10,12 +10,14 @@ import { Divider } from "./components/Divider"
 import { Avatar } from "./components/Avatar";
 import DiscordPFP from "./examples/DiscordPFP";
 
-// TODO - add storybook
-// TODO - make some test cases for each component
+// * TODO - add storybook
+// * TODO - make some test cases for each component
 // TODO - add variant styles to input
 // TODO - add variant styles to button
 // TODO - fix snippet component
 // TODO - remake the accordian component
+// TODO - fix any other bug that comes up
+// TODO - add some more components
 // TODO - finish setting up the github repo to make it open sourced and public
 // TODO - public npm
 // TODO - and we're done
