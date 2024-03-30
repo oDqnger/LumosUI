@@ -1,6 +1,6 @@
 import React from "react";
 import { AllProps } from "./button.d";
-import { buttonColors, buttonSizes, radiusStyles } from "./ButtonStyles"
+import { buttonColors, buttonSizes, radiusStyles, baseStyles } from "./ButtonStyles"
 
 export function Button(props: AllProps) {
 
@@ -12,26 +12,37 @@ export function Button(props: AllProps) {
     isDisabled=false, 
     children: text, 
     className="",
+    customStyles=null,
+    overrideDefaultOnClick,
     ...defaultProps
     } = props;
 
-    const buttonStyles = {
-        normal: `border ${radiusStyles[radius]} ${buttonColors[color].normal} pr-7 pl-7 pt-2 pb-2 ${buttonColors[color].hover} transition ease-in-out ${className}`,
-        clicked: `border ${radiusStyles[radius]} ${buttonColors[color].clicked} pr-7 pl-7 pt-2 pb-2 ${className}`,
-        disable: `border ${radiusStyles[radius]} ${buttonColors[color].disable} pr-7 pl-7 pt-2 pb-2 ${className}`,
-    };
-    const selectDisabled = () => isDisabled ? buttonStyles.disable + buttonSizes[size]: buttonStyles.normal + buttonSizes[size];
-    
+    const isDisabledOrNormal = isDisabled ? buttonColors[color].disable : buttonColors[color].normal + buttonColors[color].hover;
+
+    const combinedStyles =
+    className
+    +baseStyles
+    +radiusStyles[radius]
+    +buttonSizes[size]
+    +isDisabledOrNormal
+
     return (
         <button
         disabled={isDisabled}
-        className={selectDisabled()}
+        className={customStyles ?? combinedStyles}
         onClick={(e) => {
-            const target = e.target as HTMLButtonElement;
-            target.className = buttonStyles.clicked + buttonSizes[size];
-            setTimeout(() => {
-                target.className = buttonStyles.normal + buttonSizes[size];
-            }, 50);
+            if (customStyles == null || overrideDefaultOnClick == null) {
+                const target = e.target as HTMLButtonElement;
+                target.className = combinedStyles.replace(buttonColors[color].normal, buttonColors[color].clicked);
+                setTimeout(() => {
+                    target.className = combinedStyles
+                }, 40);
+            }
+
+            if (overrideDefaultOnClick != null) {
+                overrideDefaultOnClick();
+            }
+            
             if (handleClick) {
                 handleClick(e);
             }

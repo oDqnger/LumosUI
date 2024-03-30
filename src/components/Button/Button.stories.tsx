@@ -75,5 +75,12 @@ export const SizeLargeButton: Story = {
 }
 
 export const CustomButton: Story = {
-    render: () => <Button className="m-5 text-lg w-96">Button</Button>
+    render: () => 
+    <>
+        <Button customStyles="border-2 bg-slate-500 rounded-full p-5">Button</Button>
+        <Button className="text-white h-32 m-20">Hello</Button>
+        <Button overrideDefaultOnClick={(e) => {
+            console.log("Hello!");
+        }}>Hello</Button>
+    </>
 }

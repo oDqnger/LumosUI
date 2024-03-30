@@ -5,17 +5,19 @@ type SizeTypes = "sm" | "md" | "lg"
 interface ButtonProps {
     isDisabled?: boolean,
     onClick?: Function,
+    overrideDefaultOnClick?: Function
 }
 
 interface DefaultProps {
     children?: any,
-    className?: any,
+    className?: string,
 }
 
 interface StyledProps {
     color?: ColorTypes,
     radius?: RadiusTypes,
     size?: SizeTypes,
+    customStyles?: string,
 }
 
 export type AllProps = ButtonProps & DefaultProps & StyledProps;

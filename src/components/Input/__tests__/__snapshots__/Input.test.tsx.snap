@@ -1,15 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input component match the snapshot 1`] = `
-<div>
-  <input
-    class="undefined border-2 rounded-md pt-3 pb-3 pl-7 pr-7 text-base font-semibold text-white transition ease-in-out hover:bg-gray-600 border-gray-500 bg-gray-500"
-    type="email"
-    value=""
-  />
-</div>
-`;
-
 exports[`Input component should match the snapshot 1`] = `
 <div>
   <input
