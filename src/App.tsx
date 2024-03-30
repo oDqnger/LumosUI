@@ -12,8 +12,8 @@ import DiscordPFP from "./examples/DiscordPFP";
 
 // * TODO - add storybook
 // * TODO - make some test cases for each component
-// TODO - add variant styles to input
-// TODO - add variant styles to button
+// * TODO - add some stuff and fix bugs for button
+// TODO - add some stuff and fix bugs for input
 // TODO - fix snippet component
 // TODO - remake the accordian component
 // TODO - fix any other bug that comes up
