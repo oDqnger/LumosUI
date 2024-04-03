@@ -1,8 +1,8 @@
-import React from "react"
+import React, { forwardRef } from "react"
 import { AllProps } from "./divider.d"
 import { baseStyle, radiusStyles, variantStyles, orientationStyles } from "./DividierStyles"
 
-export default function Divider(props: AllProps) {
+function Divider(props: AllProps, ref) {
     
     const {
         className,
@@ -19,6 +19,8 @@ export default function Divider(props: AllProps) {
     +orientationStyles[orientation];
 
     return (
-        <hr className={combinedStyles} />
+        <hr ref={ref} className={combinedStyles} />
     )
 }
+
+export default forwardRef(Divider);

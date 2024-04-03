@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { AllProps } from "./button.d";
 import { buttonColors, buttonSizes, radiusStyles, baseStyles } from "./ButtonStyles"
 
-export function Button(props: AllProps) {
+function Button(props: AllProps, ref) {
 
     const {
     color="default",
@@ -47,7 +47,10 @@ export function Button(props: AllProps) {
                 handleClick(e);
             }
         }}
+        ref={ref}
         {...defaultProps}
         >{text}</button>
     )
 }
+
+export default forwardRef(Button);

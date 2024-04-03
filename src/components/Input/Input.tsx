@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { sizeStyles, radiusStyles, baseStyle, readOnlyStyle, disabledStyle } from "./InputStyles";
 import { AllProps } from "./input.d"
 
-export default function Input(props: AllProps) {
+function Input(props: AllProps, ref) {
 
     const {
         type,
@@ -51,8 +51,11 @@ export default function Input(props: AllProps) {
             disabled={disabled}
             readOnly={readOnly}
             required={required}
+            ref={ref}
             { ...defaultProps }
             />
         </>
     )
 }
+
+export default forwardRef(Input);

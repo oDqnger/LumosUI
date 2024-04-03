@@ -1,8 +1,10 @@
+import { HTMLAttributes } from "react";
+
 type TypeOrientation = "horizontal" | "vertical";
 type VariantType = "dotted" | "dashed"
 type RadiusType = "none" | "sm" | "md" | "lg" | "full"
 
-interface DefaultProps {
+interface DefaultProps extends HTMLAttributes<HTMLHRElement> {
     className?: string,
 }
 

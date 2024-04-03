@@ -1,6 +1,8 @@
+import { HTMLAttributes } from "react";
+
 type RadiusType = "none" | "sm" | "md" | "lg" | "xl" | "full";
 
-interface DefaultProps {
+interface DefaultProps extends HTMLAttributes<HTMLDivElement> {
     children?: any,
     className?: string,
 }

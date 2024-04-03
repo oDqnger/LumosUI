@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect';
-import React from "react"
+import React, { createRef } from "react"
 import { fireEvent, render } from "@testing-library/react"
-import { Button } from "../Button"
+import Button from "../Button"
 import "@testing-library/jest-dom"
 
 describe("Button component", () => {
@@ -66,5 +66,12 @@ describe("Button component", () => {
         const { container: button } = render(<Button><h1>Hello</h1></Button>)
         expect(button).toBeInTheDocument();
         expect(button).toMatchSnapshot();
+    })
+
+    it("should return a ref of button element of Button component", () => {
+        const buttonRef = createRef<HTMLButtonElement>();
+        const { container } = render(<Button ref={buttonRef}>Hello</Button>)
+        // eslint-disable-next-line testing-library/no-node-access
+        expect(buttonRef.current).toBeTruthy();
     })
 })

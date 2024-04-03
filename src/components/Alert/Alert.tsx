@@ -1,8 +1,8 @@
-import React from "react"
+import React, { forwardRef } from "react"
 import { AllProps } from "./alert.d";
 import { themeStyles, baseStyles, radiusStyles } from "./AlertStyles";
 
-export default function Alert(props: AllProps) {
+function Alert(props: AllProps, ref) {
     
     const {
         children: text,
@@ -23,9 +23,12 @@ export default function Alert(props: AllProps) {
         <>
             <div
             className={combinedStyles}
+            ref={ref}
             { ...defaultProps }
             >
             {text}</div>
         </>
     )
 }
+
+export default forwardRef(Alert);

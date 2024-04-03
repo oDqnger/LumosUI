@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { AllProps } from "./avatar.d";
 import { avatarNameBaseStyles, avatarColors, avatarSizesSrc, avatarSizesName, radiusStyles } from "./AvatarStyles";
 
-export default function Avatar(props: AllProps) {
+function Avatar(props: AllProps, ref) {
     
     const {
         src,
@@ -19,16 +19,18 @@ export default function Avatar(props: AllProps) {
     if (src != null) {
         return (
             <>
-                <img src={src} className={combinedStylesSrc} alt={name} />
+                <img ref={ref} src={src} className={combinedStylesSrc} alt={name} />
             </>
         )
     } else {
         return (
             <>
-                <div className={combinedStylesName}>
+                <div ref={ref} className={combinedStylesName}>
                     <span className="text-sm">{name?.substring(0, 3)}</span>
                 </div><br />
             </>
         )
     }
 }
+
+export default forwardRef(Avatar);

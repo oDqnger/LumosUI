@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom/extend-expect';
-import React from "react"
+import React, { createRef } from "react"
 import { render } from "@testing-library/react"
 import Card from "../Card"
 
@@ -18,5 +18,12 @@ describe("Card component", () => {
             </>
         )
         expect(container).toMatchSnapshot()
+    })
+
+    it("should return a ref of div element of Card component", () => {
+        const cardRef = createRef<HTMLDivElement>();
+        const { container } = render(<Card ref={cardRef}>Hello</Card>)
+        // eslint-disable-next-line testing-library/no-node-access
+        expect(cardRef.current).toBeTruthy();
     })
 })

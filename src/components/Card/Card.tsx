@@ -1,8 +1,8 @@
-import React from "react"
+import React, { forwardRef } from "react"
 import { AllProps } from "./card.d"
 import { baseStyles, radiusStyles } from "./CardStyles";
 
-export default function Card(props: AllProps) {
+function Card(props: AllProps, ref) {
     
     const {
         children: text,
@@ -16,6 +16,7 @@ export default function Card(props: AllProps) {
     return (
         <>
             <div
+            ref={ref}
             className={combinedStyles}
             {...defaultProps}
             >{text}
@@ -23,3 +24,5 @@ export default function Card(props: AllProps) {
         </>
     )
 }
+
+export default forwardRef(Card);

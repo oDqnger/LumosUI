@@ -1,8 +1,10 @@
+import { HTMLAttributes } from "react";
+
 type SizeTypes = "sm" | "md" | "lg" | "xl" ;
 type RadiusTypes = "none" | "sm" | "md" | "lg" | "full";
 type ColorTypes = "default" | "primary" | "secondary" | "success" | "warning" | "danger" ;
 
-interface AvatarProps {
+interface AvatarProps extends HTMLAttributes<HTMLDivElement | HTMLImageElement> {
     src?: any,
     name?: string,
     className?: string,

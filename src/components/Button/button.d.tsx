@@ -1,10 +1,11 @@
+import { ButtonHTMLAttributes } from "react";
+
 type ColorTypes = "default" | "primary" | "secondary" | "success" | "warning" | "danger"
 type RadiusTypes = "none" | "sm" | "md" | "lg" | "full"
 type SizeTypes = "sm" | "md" | "lg"
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     isDisabled?: boolean,
-    onClick?: Function,
     overrideDefaultOnClick?: Function
 }
 

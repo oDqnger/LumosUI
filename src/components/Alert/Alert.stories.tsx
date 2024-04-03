@@ -57,5 +57,8 @@ export const InfoVariantFilledAlert: Story = {
 }
 
 export const CustomAlert: Story = {
-    render: () => <Alert className="text-sm" theme="info">This is a filled info alert</Alert>
+    render: () => 
+    <>
+        <Alert className="text-sm" theme="info">This is a filled info alert</Alert>
+    </>
 }
