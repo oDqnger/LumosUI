@@ -15,7 +15,7 @@ import DiscordPFP from "./examples/DiscordPFP";
 // * TODO - add some stuff and fix bugs for button
 // * TODO - add some stuff and fix bugs for input
 // * TODO - fix snippet component
-// TODO - remake the accordian component
+// * TODO - remake the accordian component
 // TODO - fix any other bug that comes up
 // TODO - add some more components
 // TODO - finish setting up the github repo to make it open sourced and public

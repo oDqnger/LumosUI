@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button } from "../Button"
+import { containerStyles, buttonStyles } from './AccordianStyles';
 
 export default function AccordianItem(props) {
     const {
@@ -14,7 +15,7 @@ export default function AccordianItem(props) {
     return (
         <>
             <Button
-            className="border-b-5 border-slate-700 w-72 h-14"
+            className={buttonStyles}
             radius="none"
             onClick={(e) => {
                 setDisplayContainer(!displayContainer)
@@ -25,7 +26,7 @@ export default function AccordianItem(props) {
                 displayContainer
                 ?
                 <>
-                    <br/><div className='transition ease-in-out duration-300 border-2 border-zinc-500 w-72 inline-block overflow-auto opacity-100'>
+                    <br/><div className={containerStyles}>
                         {text}
                     </div>
                 </>

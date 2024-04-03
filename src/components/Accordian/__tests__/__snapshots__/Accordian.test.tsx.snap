@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordian component should match snapshot 1`] = `<div />`;
+
+exports[`AccordianItem component should match snapshot 1`] = `
+<div>
+  <button
+    class="mb-1 text-left border-b-5 border-slate-700 w-72 h-14border pr-7 pl-7 pt-2 pb-2 transition ease-in-out rounded-lg bg-zinc-500 hover:bg-zinc-600"
+  />
+</div>
+`;
