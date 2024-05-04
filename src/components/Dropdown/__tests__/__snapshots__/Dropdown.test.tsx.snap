@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown component should match the snapshot 1`] = `
+<div>
+  <select
+    class="transition ease-in-out border-2 border-gray-700 rounded-lg p-3 cursor-pointer hover:border-gray-500"
+    id=""
+    name=""
+  >
+    <option>
+      Hello
+    </option>
+  </select>
+</div>
+`;
