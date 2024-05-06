@@ -12,6 +12,9 @@ export default meta;
 type Story = StoryObj<typeof Accordian>;
 
 export const Something: Story = {
+    args: {
+
+    },
     render: () => 
     <>
         <Accordian>

@@ -1,5 +1,4 @@
 import React, { Children, cloneElement } from 'react' 
-import PropTypes from 'prop-types'
 import AccordianItem from './AccordianItem'
 
 export default function Accordian(props) {
@@ -24,8 +23,4 @@ export default function Accordian(props) {
             }
         </> 
     )
-}
-
-Accordian.propTypes = {
-    
 }

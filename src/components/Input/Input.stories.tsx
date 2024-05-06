@@ -10,7 +10,12 @@ export default meta;
 type Story = StoryObj<typeof Input>;
 
 export const DefaultInput: Story = {
-    argTypes: {
-        
+    args: {
+        disabled: true,
+        type: "text",
+        readOnly: false,
+        required: false,
+        sizes:"md",
+        radius:"md"
     }
 }

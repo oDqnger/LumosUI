@@ -18,9 +18,15 @@ import DiscordPFP from "./examples/DiscordPFP";
 // * TODO - remake the accordian component
 // * TODO - add ref prop to each component (along with test cases)
 // * TODO - add extra stuff to the interfaces and types (for props)
-// TODO - add some more components
-// TODO - finish setting up the github repo to make it open sourced and public
-// TODO - public npm
+// * TODO - add some more components
+// * TODO - fix any bugs
+// * TODO - fix any folder or file structure (remove, add, modify)
+// * TODO - add anything that you feel like you need
+// TODO - add docs
+// TODO - setup npm account
+// TODO - setup package.json file
+// TODO - learn to build library and build it
+// TODO - publish to NPM
 // TODO - and we're done
 
 function App() {

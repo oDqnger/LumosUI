@@ -22,8 +22,6 @@ function Checkbox(props: AllProps, ref: any) {
             ref={ref}
             type="checkbox"
             className={allStyles}
-            name="checkboxx"
-            id="c"
             disabled={isDisabled}
             {...otherProps}
             />
