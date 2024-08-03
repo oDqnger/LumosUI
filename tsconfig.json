@@ -2,13 +2,13 @@
   "compilerOptions": {
     "target": "ESNext",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "jsx": "react-jsx",                                /* Specify what JSX code is generated. */
-    "module": "ESNext",                                /* Specify what module code is generated. */
+    "module": "NodeNext",                                /* Specify what module code is generated. */
     "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
     "strict": true,                                      /* Enable all strict type-checking options. */
     "noImplicitAny": false,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */
     "skipLibCheck": true,                             /* Skip type checking all .d.ts files. */
-    "moduleResolution": "Bundler"
+    "moduleResolution": "NodeNext"
   },
   "include": [
     "./src",

@@ -6,20 +6,7 @@ function Input(props: AllProps, ref) {
 
     const {
         type,
-        label,
-        placeholder,
-        autoComplete,
-        autocapitalize,
-        dirname,
         disabled,
-        form,
-        maxLength,
-        minLength,
-        max,
-        min,
-        multiple,
-        name,
-        pattern,
         readOnly,
         required,
         defaultValue,
@@ -45,8 +32,6 @@ function Input(props: AllProps, ref) {
             <input
             className={combinedStyles}
             type={type}
-            placeholder={placeholder}
-            aria-label={label}
             defaultValue={defaultValue}
             disabled={disabled}
             readOnly={readOnly}
