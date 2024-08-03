@@ -22,7 +22,7 @@ import DiscordPFP from "./examples/DiscordPFP";
 // * TODO - fix any bugs
 // * TODO - fix any folder or file structure (remove, add, modify)
 // * TODO - add anything that you feel like you need
-// TODO - add docs
+// * TODO - add docs
 // TODO - setup npm account
 // TODO - setup package.json file
 // TODO - learn to build library and build it

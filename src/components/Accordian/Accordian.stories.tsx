@@ -5,6 +5,7 @@ import "../../styles/output.css"
 
 const meta: Meta<typeof Accordian> = {
     component: Accordian,
+    tags: ["autodocs"],
 };
 
 export default meta;
@@ -12,9 +13,6 @@ export default meta;
 type Story = StoryObj<typeof Accordian>;
 
 export const Something: Story = {
-    args: {
-
-    },
     render: () => 
     <>
         <Accordian>
@@ -28,5 +26,9 @@ export const Something: Story = {
             Start with learning HTML and CSS; don't wait to fully master these and start building simple projects as soon as possible. You could try rebuilding the frontend of your favorite websites using HTML and CSS to start with. Do as many of these projects as possible as you keep learning. Once you are somewhat comfortable with HTML and CSS, start learning some basic JavaScript (DOM manipulation, making AJAX calls etc) and learn how to add interactivity to your websites. While you are at it learn some basics of Git and GitHub. At this point you should be able to get an entry level frontend development job. Keep revisiting this roadmap and try to fill the gaps in your knowledge.
             </AccordianItem>
         </Accordian>
-    </>
+    </>,
+    args: {
+        title: "e",
+        subtitle: "hello",
+    },
 }

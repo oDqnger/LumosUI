@@ -12,21 +12,38 @@ export default meta;
 type Story = StoryObj<typeof Typography>;
 
 export const DefaultTypography: Story = {
-    render: () => 
+    render: (args) => 
     <>
-        <Typography components="h1">Header 1</Typography>
-        <Typography components="h2">Header 2</Typography>
-        <Typography components="h3">Header 3</Typography>
-        <Typography components="h4">Header 4</Typography>
-        <Typography components="h5">Header 5</Typography>
-        <Typography components="h6">Header 6</Typography>
-        <Typography components="p">Paragraph</Typography>
-
-        <Typography variants="heading" className="text-center">Heading</Typography>
-        <Typography variants="subheading" components="h2">Subheading</Typography>
-        <Typography variants="body">Body</Typography>
-        <Typography variants="button">Button</Typography>
-        <Typography variants="caption">Caption</Typography>
-
-    </>
+        <Typography {...args}>Header 1</Typography>
+    </>,
+    argTypes: {
+        variants: {
+            control: { type: 'select' },
+            options: ['heading', 'subheading', 'body', 'caption', 'button'],
+            description: 'Variant of the typography',
+        },
+        components: {
+            control: { type: 'select' },
+            options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'],
+            description: 'HTML component to be used',
+        },
+        color: {
+            control: { type: 'select' },
+            options: ['default', 'primary', 'secondary', 'success', 'warning', 'danger'],
+            description: 'Color theme of the typography',
+        },
+        display: {
+            control: { type: 'select' },
+            options: ['block', 'inline', 'inline-block', 'left', 'center', 'right', 'justify'],
+            description: 'Display style of the typography',
+        },
+        children: {
+            control: 'text',
+            description: 'Content inside the typography component',
+        },
+        className: {
+            control: 'text',
+            description: 'Additional class names for the component',
+        },
+    },
 }

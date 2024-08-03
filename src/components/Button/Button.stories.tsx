@@ -4,6 +4,7 @@ import "../../styles/output.css"
 
 const meta: Meta<typeof Button> = {
     component: Button,
+    tags: ["autodocs"],
 };
 
 export default meta;
@@ -11,7 +12,7 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const NormalButton: Story = {
-    render: () => <Button>Button</Button>,
+    render: (args) => <Button {...args}>Button</Button>,
 };
 
 export const DisabledButton: Story = {

@@ -2,7 +2,13 @@ import React, { useState } from 'react'
 import { Button } from "../Button"
 import { containerStyles, buttonStyles } from './AccordianStyles';
 
-export default function AccordianItem(props) {
+interface AccordianItemProps {
+    title?: string,
+    subtitle?: string,
+    children?: any
+}
+
+export default function AccordianItem(props: AccordianItemProps) {
     const {
         title,
         subtitle, 
