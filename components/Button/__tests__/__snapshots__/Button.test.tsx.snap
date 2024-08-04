@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component fires the overrideDefaultOnClick function 1`] = `
+<div>
+  <button
+    class="border-2 bg-slate-300 p-4"
+  >
+    Click me2!
+  </button>
+</div>
+`;
+
+exports[`Button component should match snapshot 1`] = `
+<div>
+  <button
+    class="border pr-7 pl-7 pt-2 pb-2 transition ease-in-out rounded-lg bg-zinc-500 hover:bg-zinc-600"
+  >
+    Hello
+  </button>
+</div>
+`;
+
+exports[`Button component should match snapshot for customStyles 1`] = `
+<div>
+  <button
+    class="border-2 bg-emerald-300"
+  >
+    Hello
+  </button>
+</div>
+`;
+
+exports[`Button component should render children 1`] = `
+<div>
+  <button
+    class="border pr-7 pl-7 pt-2 pb-2 transition ease-in-out rounded-lg bg-zinc-500 hover:bg-zinc-600"
+  >
+    <h1>
+      Hello
+    </h1>
+  </button>
+</div>
+`;

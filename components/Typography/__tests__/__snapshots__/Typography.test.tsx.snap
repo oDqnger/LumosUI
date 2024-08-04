@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography component should match snapshot of Typography component 1`] = `
+<div>
+  <span
+    class="undefined font-bold text-4xl text-black text-justify"
+  >
+    Hello
+  </span>
+  <br />
+</div>
+`;

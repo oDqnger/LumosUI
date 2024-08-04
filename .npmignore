@@ -15,9 +15,13 @@ tests/
 test/
 __tests__/
 *.spec.js
-*.spec.ts
+*.spec.jsx
+*.spec.tsx
 *.test.js
+*.test.jsx
+*.test.tsx
 *.test.ts
+*.spec.ts
 
 # Exclude build directories
 dist/
