@@ -3,6 +3,7 @@ import { FaRegCopy } from "react-icons/fa6"
 import { TiTick } from "react-icons/ti"
 import { sizes, textStyles, baseStyles } from "./SnippetStyles";
 import SnippetProps from "./snippet.d";
+import "../../styles/output.css"
 
 function Snippet(props: SnippetProps, ref) {
     

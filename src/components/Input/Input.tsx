@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import { sizeStyles, radiusStyles, baseStyle, readOnlyStyle, disabledStyle } from "./InputStyles";
 import { AllProps } from "./input.d"
+import "../../styles/output.css"
 
 function Input(props: AllProps, ref) {
 

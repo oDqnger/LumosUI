@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react"
 import { AllProps } from "./alert.d";
 import { themeStyles, baseStyles, radiusStyles } from "./AlertStyles";
+import "../../styles/output.css"
 
 function Alert(props: AllProps, ref) {
     

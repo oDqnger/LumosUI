@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import { AllProps } from "./avatar.d";
 import { avatarNameBaseStyles, avatarColors, avatarSizesSrc, avatarSizesName, radiusStyles } from "./AvatarStyles";
+import "../../styles/output.css"
 
 function Avatar(props: AllProps, ref) {
     

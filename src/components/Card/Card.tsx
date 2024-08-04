@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react"
 import { AllProps } from "./card.d"
 import { baseStyles, radiusStyles } from "./CardStyles";
+import "../../styles/output.css"
 
 function Card(props: AllProps, ref) {
     

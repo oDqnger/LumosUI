@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import { AllProps } from "./typography.d"
 import { variantStyles, typoColors, typoDisplayStyles, typoComponentStyles } from "./TypographyStyles";
+import "../../styles/output.css"
 
 function Typography(props: AllProps, ref) {
     

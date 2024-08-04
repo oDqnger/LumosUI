@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import { baseStyles, checkboxColors, checkboxSizes } from "./CheckboxStyles";
 import { AllProps } from "./checkbox.d";
+import "../../styles/output.css"
 
 function Checkbox(props: AllProps, ref: any) {
     

@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import { AllProps } from "./button.d";
 import { buttonColors, buttonSizes, radiusStyles, baseStyles } from "./ButtonStyles"
+import "../../styles/output.css"
 
 function Button(props: AllProps, ref) {
 

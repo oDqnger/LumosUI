@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react"
 import { AllProps } from "./divider.d"
 import { baseStyle, radiusStyles, variantStyles, orientationStyles } from "./DividierStyles"
+import "../../styles/output.css"
 
 function Divider(props: AllProps, ref) {
     

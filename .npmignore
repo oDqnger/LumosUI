@@ -1,0 +1,21 @@
+# exlude storybook folders
+storybook/
+.storybook/
+
+# Exclude configuration files
+*.config.js
+*.config.ts
+*.config.json
+
+# Exclude test directories and files
+tests/
+test/
+__tests__/
+*.spec.js
+*.spec.ts
+*.test.js
+*.test.ts
+
+# Exclude build directories
+dist/
+build/

@@ -1,6 +1,7 @@
 import React, { forwardRef, Children } from "react"
 import { AllOptionProps, AllDropdownProps } from "./Dropdown.d" 
 import { dropdownBaseStyles } from "./DropdownStyles";
+import "../../styles/output.css"
 
 const Option = forwardRef((props: AllOptionProps, ref: any) => {
     
