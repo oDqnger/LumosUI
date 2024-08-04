@@ -1,6 +1,9 @@
 # exlude storybook folders
+stories/
 storybook/
 .storybook/
+*.stories.tsx
+*.d.tsx
 
 # Exclude configuration files
 *.config.js

@@ -6,7 +6,7 @@
 
 To install this library, do:
 ```bash
-npm install lumosui
+npm install @odqnger/lumosui
 ```
 
 ## Example Usage
