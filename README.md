@@ -13,7 +13,7 @@ npm install @odqnger/lumosui
 
 Here's an example of how you would use the components:
 ```tsx
-import { Button } from "./components"
+import { Button } from "@odqnger/lumosui/components"
 
 function App() {
     return (
@@ -28,7 +28,7 @@ export default App
 
 To uninstall this library, do:
 ```bash
-npm uninstall lumosui
+npm uninstall @odqnger/lumosui
 ```
 
 ## Contributing

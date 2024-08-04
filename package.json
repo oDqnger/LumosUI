@@ -6,7 +6,8 @@
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
-    "components/"
+    "components/",
+    "styles/"
   ],
   "dependencies": {
     "react": "^18.3.1",
