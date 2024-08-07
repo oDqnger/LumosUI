@@ -3,7 +3,6 @@ stories/
 storybook/
 .storybook/
 *.stories.tsx
-*.d.tsx
 
 # Exclude configuration files
 *.config.js
@@ -23,6 +22,4 @@ __tests__/
 *.test.ts
 *.spec.ts
 
-# Exclude build directories
-dist/
-build/
+node_modules/
